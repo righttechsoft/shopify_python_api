@@ -22,7 +22,7 @@ setup(
     scripts=["scripts/shopify_api.py"],
     license="MIT License",
     install_requires=[
-        "pyactiveresource>=2.2.2",
+        "pyactiveresource @ git+ssh://git@github.com:righttechsoft/pyactiveresource.git",
         "PyJWT >= 2.0.0",
         "PyYAML",
         "six",
