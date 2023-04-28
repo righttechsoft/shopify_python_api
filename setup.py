@@ -22,10 +22,13 @@ setup(
     scripts=["scripts/shopify_api.py"],
     license="MIT License",
     install_requires=[
-        "pyactiveresource @ git+ssh://git@github.com:righttechsoft/pyactiveresource.git",
+        "pyactiveresource @ git+https://github.com/righttechsoft/pyactiveresource.git#egg=pyactiveresource",
         "PyJWT >= 2.0.0",
         "PyYAML",
         "six",
+    ],
+    dependency_links = [
+        "git+https://github.com/righttechsoft/pyactiveresource.git"
     ],
     test_suite="test",
     tests_require=[
